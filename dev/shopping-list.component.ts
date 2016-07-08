@@ -1,4 +1,4 @@
-import {Component} from "angular2/core"
+import {Component} from "@angular/core"
 
 @Component({
   selector: 'shopping-list',
@@ -9,10 +9,10 @@ import {Component} from "angular2/core"
             (click)='onItemClicked(shoppingListItem)'
         >{{shoppingListItem.name}}</li>
       </ul>
+      
       <input type='text' [(ngModel)]='selectedItem.name' #shoppingListItem>
-      <button (click)="onDeleteItem()">Delete Item</button>
       <br/>
-      <input type='text' #shoppingListItem>
+      <button (click)="onDeleteItem()">Delete Item</button>
       <button (click)="onAddItem(shoppingListItem)">Add Item</button>
   `
 })
