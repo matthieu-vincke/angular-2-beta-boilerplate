@@ -1,3 +1,8 @@
+import {
+    describe, 
+    expect, 
+    it,  
+    beforeEach} from '@angular/core/testing';
 import { ShoppingListComponent } from './shopping-list.component';
 
 describe('Shopping list', () => {
