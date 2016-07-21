@@ -10,8 +10,7 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="app/systemjs.config.js"></script>
-
+    <script src="systemjs.config.js"></script>
 
     <link rel="stylesheet" href="src/css/app.css">
 </head>
@@ -19,14 +18,6 @@
 <my-app>Loading...</my-app>
 
 <script>
-    System.config({
-        packages: {
-            app: {
-                format: 'register',
-                defaultExtension: 'js'
-            }
-        }
-    });
     System.import('app/boot')
             .then(null, console.error.bind(console));
 </script>
