@@ -15,6 +15,7 @@
         'client': { main: 'app/boot.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' },
         'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+        'app': {defaultExtension: 'js'},
     };
     var ngPackageNames = [
         'common',
