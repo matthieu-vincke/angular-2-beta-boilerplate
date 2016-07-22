@@ -68,4 +68,5 @@ gulp.task('watch', function () {
     gulp.watch(assetsDev + 'img/*', ['build-img']);
 });
 
+gulp.task('build',  ['clean', 'build-ts', 'build-css']);
 gulp.task('default', ['clean', 'watch', 'build-ts', 'build-css']);
